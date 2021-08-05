@@ -6,142 +6,173 @@
 body {
     font-family: 'Jura', sans-serif;
     width: 95%;
-    margin: 0 auto;
+    margin: 2rem auto;
     text-align: center;
     background-color: #80CED7;
-}
-#home nav {
-    margin: 1rem;
-}
-#home a {
-    display: block;
-    background-color: #CCDBDC;
     color: #25283D;
-    height: 50px;
-    margin: 1rem auto;
-    padding: .5rem;
-    box-shadow: 0 2px 5px 1px #25283D;
-    border-radius: 4px;
+}
+header, #home {
+    flex-direction: column;
+}
+a, h1, h2, h3 {
+    font-family: 'Play', sans-serif;
+}
+a, h2, h3 {
+    text-transform: uppercase;
 }
 a {
     text-decoration: none;
+    color: #25283D;
 }
 img {
     width: 100%;
     padding: 10px;
     border: 10px solid #25283D;
+    border-radius: 5px;
     box-shadow: 3px 5px 8px #373738;
 }
-header {
-    padding: 0 1rem 2rem;
-}
-header img {
-    width: 70%;
-    margin: 2rem 15%;
-}
-main {
-    padding-top: 2rem;
-}
-#portfolio, #contact {
-    margin: 3rem;
-}
-section {
-    margin: 2rem auto;
-}
-section h2 {
-    margin-top: 1rem;
-}
-section p {
-    width: 90%;
-    margin: 1rem auto;
-}
-footer {
-    padding: 1rem;
-}
-footer a {
-    color: #2176AE;
+h3 {
+    margin: 3.2rem auto;
 }
 footer p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
-.footer-nav {
+.flex {
     display: flex;
-    justify-content: space-between;
+}
+#home {
+    margin-top: 1rem;
+}
+header a {
+    background-color: #CCDBDC;
+    color: #25283D;
+    margin: .5rem auto;
     padding-top: 1rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #25283D;
+}
+.nav-hover a:hover {
+    color: #DB5764;
+}
+.profile-img {
+    width: 70%;
+    margin: 2.5rem auto;
+}
+.container {
+    background-color: #CCDBDC;
+    margin: 3.2rem auto;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.container h2 {
+    margin: 1rem auto;
+}
+.container p {
+    width: 85%;
+    margin: 0 auto;
+}
+.container section {
+    margin-bottom: 2.5rem;
+}
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+.contact-info span:first-child {
+    margin-right: 1rem;
+}
+.footer-nav-one {
+    justify-content: space-between;
+    margin-top: 3rem;
     border-top: 1px solid #25283D;
+    padding-top: 1rem;
 }
-.block {
-    display: inline-block;
-    margin-right: .6rem;
+.footer-nav-one a {
+    color: #DB5764;
 }
-/* .big-screen-nav {
+.footer-nav-two {
     display: none;
-} */
-
+}
 
 @media screen and (min-width: 768px) {
-    .flex {
-        display: flex;
-    }
-    body {
-        font-size: 1.2rem;
-    }
-    h1 {
-        margin-top: 2rem;
-    }
-    nav {
-        align-items: center;
-        justify-content: space-evenly;
-        width: 30%;
-        margin: 0 auto 2rem;
+    #home {
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
     }
     #home a {
-        background-color: transparent;
-        margin-right: 1rem;
+        width: auto;
+        background: transparent;
         box-shadow: none;
     }
-    header {
+    .profile {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+    }
+    .profile p {
+        width: 60%;
         text-align: left;
+        padding-right: 1rem;
     }
-    header p {
-        margin-right: .1rem;
-    }
-    header img {
-        min-width: 300px;
+    .profile-img {
+        width: 40%;
         margin: 0;
-        order: 2;
     }
     .container {
+        display: flex;
         flex-wrap: wrap;
     }
-    section {
-        width: 45%;
+    .container h3 {
+        width: 100%;
     }
-    section:nth-child(odd){
-        margin-right: 1rem;
+    .container section {
+        width: 50%;
+        padding: 5px;
     }
-    .para {
-        width: 65%;
-        margin: 0 auto 2rem;
-    }
-    .small-screen-nav {
+    .footer-nav-one {
         display: none;
     }
-    .big-screen-nav {
+    .footer-nav-two {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        border-top: 1px solid #25283D;
+        padding-top: 1rem;
+    }
+    .footer-nav-two a {
+        text-transform: uppercase;
+        margin-left: 1rem;
     }
 }
 
-@media  screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
         font-size: 1.5rem;
     }
-    header p {
-        width: 60%;
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 8rem;
     }
-    header img {
-        width: 40%;
+    h1 {
+        width: 50%;
+        margin: 0 auto 3rem 0;
+        text-align: left;
     }
-    section {
-        width: 30%;
+    #home {
+        width: 50%;
+        justify-content: right;
+    }
+    #home a {
+        margin: 0 0 3rem 1rem;
+    }
+    .container {
+        background-color: #CCDBDC;
+        padding: 1.5rem;
+    }
+    .container section {
+        width: 33%;
     }
 }

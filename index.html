@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500&family=Play:wght@700&display=swap" rel="stylesheet">  
     <title>Responsive Website</title>
 </head>
 <body>
-    <h1>Eddie Chinchilla</h1>
-    <nav id="home" class="flex">
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-    </nav>
-   
     <header class="flex">
-        <img src="images/responsive-layout-profile.png" alt="Profile Picture">
-        <p>Hi! I'm at front-end developer who loves responsive design and css. I recently finished a degree in front-end developmnent at 
-        Treehouse and am excited to put my skills to use!</p>
+        <h1>Eddie Chinchilla</h1>
+        <nav id="home" class="flex nav-hover">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+        </nav>
+        <div class="profile">
+            <img src="images/responsive-layout-profile.png" alt="Profile Picture" class="profile-img">
+            <p>Hi! I'm at front-end developer who loves responsive design and css. I recently finished a degree in front-end developmnent at 
+            Treehouse and am excited to put my skills to use!</p>
+        </div>
     </header>
     
     <main>
-        <h3 id="portfolio" class="portfolio">Portfolio</h3>
-        <div class="flex container">
+        <div class="container">
+        <h3 id="portfolio">Portfolio</h3>
         <section>
             <img src="images/portfolio-1.png" alt="marketing page">
             <h2>Marketing Page</h2>
@@ -62,26 +64,51 @@
             <h2>Calculator</h2>
             <p>Someone can enter in the numbers they want, and press the big blues button and get the result.</p>
         </section>
+
+        <h3 id="skills">Skills</h3>
+        <section>
+            <img src="images/html-img.png" alt="html">
+            <h2>HTML</h2>
+            <p>I am still building on my begginer level HTML knowledge. Currently working on better semantics for improved accessibility.</p>
+        </section>
+
+        <section>
+            <img src="images/css-img.png" alt="CSS">
+            <h2>CSS</h2>
+            <p>I am still building on my begginer level CSS knowledge. Currently working on better responsive design.</p>
+        </section>
+
+        <section>
+            <img src="images/javascript-img.png" alt="Javascript">
+            <h2>JavaScript</h2>
+            <p>I am still building on my begginer level JavaScript knowledge. I still have a lot of work to do when it comes to my JavaScript knowledge.</p>
+        </section>
         </div>
     </main>
 
     <footer>
         <h3 id="contact">Contact</h3>
-        <p class="para">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <div>
-            <p class="block">Phone</p><span><strong>+1 (111) 555-1234</strong></span>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <div class="contact-info">
+            <span>Phone</span><span><strong>+1 (111) 555-1234</strong></span>
         </div>
-        <div>
-            <p class="block">Email</p><span><strong>email@yoursite.com</strong></span>
+        <div class="contact-info">
+            <span>Email</span><span><strong>email@yoursite.com</strong></span>
         </div>
-        <div class="footer-nav">
-            <span>Eddie Chinchilla</span>
-            <!-- <nav class="small-screen-nav">
+
+        <div class="flex footer-nav-one">
+            <span><strong>Eddie Chinchilla</strong></span>
+            <nav>
                 <a href="#home">Back to Top</a>
-            </nav> -->
-            <nav class="big-screen-nav">
+            </nav>
+        </div>
+
+        <div class="footer-nav-two">
+            <span><strong>Eddie Chinchilla</strong></span>
+            <nav class="nav-hover">
                 <a href="#home">Home</a>
                 <a href="#portfolio">Portfolio</a>
+                <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>

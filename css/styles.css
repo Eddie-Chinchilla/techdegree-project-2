@@ -163,7 +163,7 @@ header a {
     }
     #home {
         width: 50%;
-        justify-content: right;
+        justify-content: flex-end;
     }
     #home a {
         margin: 0 0 3rem 1rem;
